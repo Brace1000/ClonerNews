@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="/static/styles.css">
+  <title>ClonerNews</title>
+</head>
+<body>
+  <header>
+    <h1>ClonerNews</h1>
+  </header>
+  
+
+<nav>
+  <a href="#" id="nav-stories">Stories</a>
+  <a href="#" id="nav-jobs">Jobs</a>
+  <a href="#" id="nav-polls">Polls</a>
+  <a href="#" id="nav-ask">Ask HN</a>
+  <a href="#" id="nav-show">Show HN</a>
+</nav>
+
+<div class="container">
+  <aside class="sidebar left-sidebar">
+    <div class="stories-updates">
+      <h3>Top Stories</h3>
+      <ul id="top-stories-list">
+        <li><a href="#">Top Stories</a></li>
+      </ul>
+      <h3>New Stories</h3>
+      <ul id="new-stories-list">
+        <li><a href="#">New Stories</a></li>
+      </ul>
+      <h3>Best Stories</h3>
+      <ul id="best-stories-list">
+        <li><a href="#">Best Stories</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- Content will be dynamically loaded here -->
+  </main>
+
+  <aside class="sidebar right-sidebar">
+    <div class="live-updates">
+      <h3>Live Updates</h3>
+      <ul id="live-updates-list"></ul>
+    </div>
+  </aside>
+</div>
+
+<button id="load-more" class="load-more">Load More</button>
+
+<div id="notification"><i class="fas fa-bell"></i> 
+  <span>New Updates!</span></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script src="/src/clonernews.js"></script>
+</body>
+</html>
