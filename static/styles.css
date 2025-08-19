@@ -1,0 +1,280 @@
+/* General styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #3a3a3a;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  max-width: 100%;
+}
+
+header {
+  background-color: #3b5998;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  color: #3b5998;
+  margin: 0 20px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#main-content a {
+  color: #3b5998;
+}
+
+.post p {
+  display: none;
+}
+
+.post p.post-meta {
+  display: block;
+}
+.poll-option {
+  display: none;
+}
+
+.comments p {
+  display: block;
+}
+
+aside.sidebar {
+  width: 20%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.left-sidebar {
+  background-color: #f4f6f8;
+}
+
+.right-sidebar {
+  background-color: #f4f6f8;
+}
+
+/* Sidebar section titles */
+.sidebar h3 {
+  font-size: 1.2rem;
+  color: #3b5998;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin-bottom: 8px;
+}
+
+.sidebar a {
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  color: #ff9800;
+}
+
+/* Load More button */
+.load-more {
+  display: block;
+  margin: 20px auto;
+  padding: 12px;
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.load-more:hover {
+  background-color: #ff9800;
+}
+
+/* Notification */
+#notification {
+  display: none;
+  background-color: #3b5;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-size: 1rem;
+}
+
+/* Comments styling */
+.comments {
+  margin-top: 1.5rem;
+}
+
+.comment {
+  background-color: #e1e9f7;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.comment-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #3b5998;
+  position: absolute;
+  left: -50px;
+  top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #3b5998;
+}
+
+.comment-content {
+  margin-left: 60px;
+  font-size: 1rem;
+}
+
+.nested-comments {
+  margin-left: 20px;
+  border-left: 2px solid #dfe3ee;
+  padding-left: 10px;
+}
+
+.comment-actions {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #3b5998;
+}
+
+.comment-actions a {
+  color: #ff9800;
+  margin-right: 12px;
+}
+
+.comment-actions a:hover {
+  text-decoration: underline;
+}
+
+/* Poll option styling */
+.poll-option {
+  background-color: #e9f3ff;
+  padding: 12px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.poll-option-score {
+  color: #3b5998;
+  font-size: 1rem;
+}
+
+.live-updates ul, .stories-updates ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.live-updates li, .stories-updates li {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.comment-actions {
+  font-size: 12px;
+}
+
+a.toggle-comments {
+  font-size: .9rem;
+}
+
+@media (max-width: 768px) {
+  aside.sidebar {
+    display: none;
+  }
+
+  #main-content a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  aside.sidebar {
+    display: none;
+  }
+  header {
+    max-width: 100%;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    margin-inline: 10px;
+  }
+  .comment-content {
+    margin-left: 10px;
+  }
+
+  .comment-content p {
+    font-size: 13px;
+  }
+
+  .comment  p {
+    padding-left: 10px;
+  }
+
+  #main-content a {
+    font-size: 18px;
+  }
+}
